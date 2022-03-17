@@ -19,6 +19,8 @@ Prediction of human activity and detection of subsequent actions is crucial for 
 + matplotlib>=2.0.0
 + Pillow>=2.1.0
 + h5py>=2.7.0
++ ffmpeg>=1.0.1
++ tqdm>=4.11.2
 
 
 ## Objective 
