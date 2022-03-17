@@ -30,14 +30,19 @@ Prediction of human activity and detection of subsequent actions is crucial for 
 + Create public repository consisting code for training and prediction for 3 data types of human activity: Skeleton, RGB Video and Video based Skeleton.
 
 ## Methodology 
+
+Employ existing deeplearning techniques based on CNN and LSTM for human activity recongition based on publically available datasets. Evaluate the results from different dataset and deeplearning models.
+
+There have been three types of datasets and deeplearning techniques employed for evaluating [Inhard Dataset](https://zenodo.org/record/4003541#.Yh3xS-jMKUl) and our own dataset captured at lab environment.
+
 + ### Spatial based activity recognition using RGB data
-> It is a world scene captured e.g., from top view to visualize the human activity using optical camera (RGB data).
+> It is a world scene captured e.g., from top view to visualize the human activity using optical camera (RGB data). The model employs CNN + LSTM for activity recognition. Video clustering and learning model is adopted from [here](https://github.com/SBoyNumber1/LSTM-video-classification) and [here](https://github.com/SBoyNumber1/LSTM-video-classification). 
 
 + ### IMU based activity recognition using BVH data
 > Skeleton data are present in form of biovision hierarchy format (BVH) which consists of a hierarchy of body joints and its coordinates with a time-stamp.
 
 + ### Open pose based activity recognition using RGD data
-> This method detects and maps the key points of the human body on RGB video data.
+> This method detects and maps the key points of the human body on RGB video data by using [open pose models](https://github.com/CMU-Perceptual-Computing-Lab/openpose).
 
 ## Results
 
@@ -74,7 +79,7 @@ Dividing the InHard datasets into short activity (SA) and long activity (LA), we
 + __Following are the steps for training a model CNN + LSTM and prediction for video RGB data__
 
 
-1. Place the videos in data/train and data/test folders. Each video type should have its own folder as shown below.
+1. Place the videos by downloading from InHard datasets according to the following hierarchy. Each video type should have its own folder as shown below.
 
 ```
 	| data/test
