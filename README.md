@@ -226,7 +226,6 @@ This approach has employed a model from [Open pose](https://github.com/CMU-Perce
 + You could access the InHard Dataset [here](https://zenodo.org/record/4003541#.Yh3xS-jMKUl).
 
 ## References
-+ If you want to use this model or code, please cite our paper [here](https://protech.mb.uni-siegen.de/fams/research/publications/XX)
 + [InHard Dataset](https://zenodo.org/record/4003541#.Yh3xS-jMKUl)
 + [Open pose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) 
 + RGB Video classification [here](https://github.com/harvitronix/continuous-online-video-classification-blog) or [here](https://github.com/SBoyNumber1/LSTM-video-classification) 
