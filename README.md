@@ -68,7 +68,6 @@ Dividing the InHard datasets into short activity (SA) and long activity (LA), we
 + In order to use the HARNets, there are three networks given in the source code. These are for spatial activity recognition (RGB based), IMU based activity recognition (Skeleton) and RGB open pose activity recognition (2D). The networks use LSTM and CNN networks on Tensorflow architecture. 
 
 ### Spatial based activity recognition using RGB data
-(This code applies to [this](https://github.com/Valayramani/HARNet/tree/main/RGB%20Video) folder)
 
 + __Following are the steps for training a model CNN + LSTM and prediction for video RGB data__
 
@@ -150,7 +149,7 @@ $ python predict.py
 
 
 ### IMU based activity recognition using BVH data
-(This code applies to [this](https://github.com/Valayramani/HARNet/tree/main/Skeleton) folder)
+
 
 __Following are the steps for training a model (LSTM) and prediction for Skeleton data__ 
 
@@ -212,23 +211,25 @@ $ python Skeleton_Prediction.py
 
 
 ### Open pose based activity recognition using RGD data
-(This code applies to [this](https://github.com/Valayramani/HARNet/tree/main/Video-Skeleton) folder)
+This approach has employed a model from [Open pose](https://github.com/CMU-Perceptual-Computing-Lab/openpose).
 
 
 
-## Data Set 
+## DataSet 
 + You could access the InHard Dataset [here](https://zenodo.org/record/4003541#.Yh3xS-jMKUl).
 
 ## References
 + If you want to use this model or code, please cite our paper [here](https://protech.mb.uni-siegen.de/fams/research/publications/XX)
 + [InHard Dataset](https://zenodo.org/record/4003541#.Yh3xS-jMKUl)
 + [Open pose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) 
++ RGB Video classification [here](https://github.com/harvitronix/continuous-online-video-classification-blog) or [here](https://github.com/SBoyNumber1/LSTM-video-classification) 
 
 ## Contribution
 This work has been conducted at the University of Siegen, Germany, [Institute of Production Technology](https://protech.mb.uni-siegen.de/).
 
-+ [Valay Mukesh](https://github.com/Valayramani)
 + [Tadele Belay Tuli](https://tadeletuli.com)
++ [Valay Mukesh](https://github.com/Valayramani)
+
 
 ## Citation
 ```
