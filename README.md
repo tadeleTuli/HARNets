@@ -19,8 +19,6 @@ Prediction of human activity and detection of subsequent actions is crucial for 
 + matplotlib>=2.0.0
 + Pillow>=2.1.0
 + h5py>=2.7.0
-+ ffmpeg>=1.0.1
-+ tqdm>=4.11.2
 
 
 ## Objective 
@@ -30,19 +28,14 @@ Prediction of human activity and detection of subsequent actions is crucial for 
 + Create public repository consisting code for training and prediction for 3 data types of human activity: Skeleton, RGB Video and Video based Skeleton.
 
 ## Methodology 
-
-Employ existing deeplearning techniques based on CNN and LSTM for human activity recongition based on publically available datasets. Evaluate the results from different dataset and deeplearning models.
-
-There have been three types of datasets and deeplearning techniques employed for evaluating [Inhard Dataset](https://zenodo.org/record/4003541#.Yh3xS-jMKUl) and our own dataset captured at lab environment.
-
 + ### Spatial based activity recognition using RGB data
-> It is a world scene captured e.g., from top view to visualize the human activity using optical camera (RGB data). The model employs CNN + LSTM for activity recognition. Video clustering and learning model is adopted from [here](https://github.com/SBoyNumber1/LSTM-video-classification) and [here](https://github.com/SBoyNumber1/LSTM-video-classification). 
+> It is a world scene captured e.g., from top view to visualize the human activity using optical camera (RGB data).
 
 + ### IMU based activity recognition using BVH data
 > Skeleton data are present in form of biovision hierarchy format (BVH) which consists of a hierarchy of body joints and its coordinates with a time-stamp.
 
 + ### Open pose based activity recognition using RGD data
-> This method detects and maps the key points of the human body on RGB video data by using [open pose models](https://github.com/CMU-Perceptual-Computing-Lab/openpose).
+> This method detects and maps the key points of the human body on RGB video data.
 
 ## Results
 
@@ -75,11 +68,12 @@ Dividing the InHard datasets into short activity (SA) and long activity (LA), we
 + In order to use the HARNets, there are three networks given in the source code. These are for spatial activity recognition (RGB based), IMU based activity recognition (Skeleton) and RGB open pose activity recognition (2D). The networks use LSTM and CNN networks on Tensorflow architecture. 
 
 ### Spatial based activity recognition using RGB data
+(This code applies to [this](https://github.com/Valayramani/HARNet/tree/main/RGB%20Video) folder)
 
 + __Following are the steps for training a model CNN + LSTM and prediction for video RGB data__
 
 
-1. Place the videos by downloading from InHard datasets according to the following hierarchy. Each video type should have its own folder as shown below.
+1. Place the videos in data/train and data/test folders. Each video type should have its own folder as shown below.
 
 ```
 	| data/test
@@ -156,7 +150,7 @@ $ python predict.py
 
 
 ### IMU based activity recognition using BVH data
-
+(This code applies to [this](https://github.com/Valayramani/HARNet/tree/main/Skeleton) folder)
 
 __Following are the steps for training a model (LSTM) and prediction for Skeleton data__ 
 
@@ -218,24 +212,23 @@ $ python Skeleton_Prediction.py
 
 
 ### Open pose based activity recognition using RGD data
-This approach has employed a model from [Open pose](https://github.com/CMU-Perceptual-Computing-Lab/openpose).
+(This code applies to [this](https://github.com/Valayramani/HARNet/tree/main/Video-Skeleton) folder)
 
 
 
-## DataSet 
+## Data Set 
 + You could access the InHard Dataset [here](https://zenodo.org/record/4003541#.Yh3xS-jMKUl).
 
 ## References
++ If you want to use this model or code, please cite our paper [here](https://protech.mb.uni-siegen.de/fams/research/publications/XX)
 + [InHard Dataset](https://zenodo.org/record/4003541#.Yh3xS-jMKUl)
 + [Open pose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) 
-+ RGB Video classification [here](https://github.com/harvitronix/continuous-online-video-classification-blog) or [here](https://github.com/SBoyNumber1/LSTM-video-classification) 
 
 ## Contribution
 This work has been conducted at the University of Siegen, Germany, [Institute of Production Technology](https://protech.mb.uni-siegen.de/).
 
-+ [Tadele Belay Tuli](https://tadeletuli.com)
 + [Valay Mukesh](https://github.com/Valayramani)
-
++ [Tadele Belay Tuli](https://tadeletuli.com)
 
 ## Citation
 ```
