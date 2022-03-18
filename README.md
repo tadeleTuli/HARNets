@@ -245,6 +245,20 @@ This work has been conducted at the University of Siegen, Germany, [Institute of
    booktitle={Conference on production systems and logistics (CPSL 2022)},
    year={2022},
  } 
+ 
+ @software{tuli_HARNets,
+  author       = {Tadele Belay Tuli and
+                  Valay Mukesh Patel and
+                  Martin Manns},
+  title        = {{HARNets: Human Activity Recognition Networks Based 
+                   on Python Programming Language}},
+  month        = mar,
+  year         = 2022,
+  publisher    = {Zenodo},
+  version      = {v0.1},
+  doi          = {10.5281/zenodo.6366665},
+  url          = {https://doi.org/10.5281/zenodo.6366665} Add to Citavi project by DOI
+}
 ```
 ## Disclaimer
 
